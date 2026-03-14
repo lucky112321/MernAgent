@@ -1,0 +1,16 @@
+{
+  "name": "ai-dev-agent",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal MERN AI Developer Agent",
+  "workspaces": ["server", "dashboard"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w dashboard\"",
+    "server": "npm run dev -w server",
+    "dashboard": "npm run dev -w dashboard",
+    "lint": "npm run lint -w server && npm run lint -w dashboard"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ai-dev-agent-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "agent": "agentCLI.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
