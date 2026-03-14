@@ -1,0 +1,21 @@
+{
+  "name": "ai-dev-agent-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "node --check index.js && node --check agent/orchestrator.js && node --check agent/planner.js && node --check agent/debugger.js && node --check repo/repoAnalyzer.js && node --check memory/memoryManager.js && node --check tools/fileEditor.js && node --check tools/shellRunner.js && node --check routes/agentRoutes.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.2",
+    "openai": "^4.63.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
